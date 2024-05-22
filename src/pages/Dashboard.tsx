@@ -5,7 +5,7 @@ const Dashboard = () =>{
     console.log(data, ' data')
     return(
         <div style={{width: '100%', height: '100%'}}>
-            {isLoading ? <p>Loading...</p> : data.map((item: any)=>{
+            {isLoading ? <div className='loader'></div> : data.map((item: any)=>{
                 return <p>{item.name}</p>
             })}
            
