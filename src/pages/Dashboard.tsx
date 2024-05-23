@@ -1,4 +1,6 @@
 import useProject from '../api/useProject'
+import MyButton from 'remoteApp/Button'
+
 const Dashboard = () =>{
 
     const { data, isLoading } = useProject();
@@ -8,7 +10,7 @@ const Dashboard = () =>{
             {isLoading ? <div className='loader'></div> : data.map((item: any)=>{
                 return <p>{item.name}</p>
             })}
-           
+           <MyButton />
         </div>
     )
 }
