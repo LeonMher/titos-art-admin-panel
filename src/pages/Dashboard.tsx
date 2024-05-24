@@ -1,5 +1,11 @@
+import React, { lazy } from 'react'
+
 import useProject from '../api/useProject'
-import MyButton from 'remoteApp/Button'
+import {Button} from '../components/shared/Button'
+// import MyButton from 'remoteApp/Button'
+
+const MyButton = lazy(() => import('remoteApp/Button'));
+
 
 const Dashboard = () =>{
 
@@ -11,6 +17,7 @@ const Dashboard = () =>{
                 return <p>{item.name}</p>
             })}
            <MyButton />
+           <Button type='primary' size='large' onClick={() => console.log('click')}>asads</Button>
         </div>
     )
 }
