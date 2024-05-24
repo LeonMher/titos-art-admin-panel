@@ -1,7 +1,7 @@
 import React, { lazy } from 'react'
 
 import useProject from '../api/useProject'
-import {Button} from '../components/shared/Button'
+import {Button} from '../components/shared/button/Button'
 // import MyButton from 'remoteApp/Button'
 
 const MyButton = lazy(() => import('remoteApp/Button'));

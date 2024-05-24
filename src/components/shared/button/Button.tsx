@@ -5,6 +5,7 @@ type ButtonProps = {
     type: 'link' | 'primary' | 'text' | 'default' | 'dashed' | undefined
     size: 'large' | 'middle' | 'small'
     disabled?: boolean
+    danger? : boolean
     icon?: React.ReactNode
     onClick: () => void
     children: React.ReactNode
