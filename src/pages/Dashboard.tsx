@@ -2,6 +2,7 @@ import React, { lazy } from 'react'
 
 import useProject from '../api/useProject'
 import {Button} from '../components/shared/button/Button'
+import {Input} from '../components/shared/input/Input'
 // import MyButton from 'remoteApp/Button'
 
 const MyButton = lazy(() => import('remoteApp/Button'));
@@ -18,6 +19,7 @@ const Dashboard = () =>{
             })}
            <MyButton />
            <Button type='primary' size='large' onClick={() => console.log('click')}>asads</Button>
+           <Input />
         </div>
     )
 }
