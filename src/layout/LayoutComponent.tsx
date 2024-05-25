@@ -28,7 +28,7 @@ const LayoutComponent: React.FC<LayoutComponentProps> = ({ collapsed, setCollaps
         <div className="logo" />
         <Menu theme="dark" mode="inline" items={items} />
       </Sider>
-      <Layout>
+      <Layout style={{height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
         <Content style={{ margin: '0 16px' }}>
           <Routes>
             <Route path="/" element={<Dashboard/>} />

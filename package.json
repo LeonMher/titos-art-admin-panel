@@ -14,10 +14,12 @@
   "dependencies": {
     "antd": "^5.17.3",
     "axios": "^1.7.2",
+    "formik": "^2.4.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-query": "^3.39.3",
-    "react-router-dom": "^6.23.1"
+    "react-router-dom": "^6.23.1",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.4.0",
